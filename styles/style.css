@@ -135,6 +135,7 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 4px 4px #00000040;
 
 }
 .btnComprar {
@@ -148,32 +149,33 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 4px 4px #00000040;
 }
 
 /* Main Two */
 
 .mainTwo {
     background-image: url("../asset/imagenes/BackgroundMain.jpeg");
-    width: 1180px;
-    height: 380px;
+    width: 1280px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: -100px ;
+    background-position: center ;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 48px 147px;
-    /* gap: 24px; */
+    padding: 48px 0px;
+    gap: 24px;
 }
 .mainTwo> h2 {
     color: #ffffff;
     text-align: center;
-    padding: 48px 465px 0px 465px;
+    /* padding: 48px 465px 0px 465px; */
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
-    width: 350px;
+    /* width: 350px; */
+    /* height: 28px; */
     
 }
 .mainTwo article {
@@ -182,44 +184,51 @@ main {
     justify-content: center;
     align-items: center;
     align-content: center;
+    gap: 24px ;
 }
 .mainTwo .pedido {
     width: 316px;
     height: 232px;
     background-color: #ffffff;
-    margin: 50px 20px 48px 2px;
+    /* margin: 50px 20px 48px 2px; */
     border-radius: 8px;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 16px;
+    box-shadow: 0px 1px 4px #e3ded7cc;
     
 }
 .mainTwo .envio {
     width: 316px;
     height: 232px;
     background-color: #ffffff;
-    margin: 50px 20px 48px 50px;
+    /* margin: 50px 20px 48px 50px; */
     border-radius: 8px;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 16px;
+    box-shadow: 0px 1px 4px #e3ded7cc;
 }
 
 .mainTwo .descuentosBeneficios{
     width: 316px;
     height: 232px;
     background-color: #ffffff;
-    margin: 50px 20px 50px 40px;
+    /* margin: 50px 20px 50px 40px; */
     border-radius: 8px;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 16px;
+    box-shadow: 0px 1px 4px #e3ded7cc;
 }
 .imgIcono {
     background-color: #2A5B45;
@@ -228,6 +237,9 @@ main {
     border-radius: 20px;
     margin: 12px;
     padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
 }
 .pedido >h2, .envio >h2, .descuentosBeneficios > h2 {
     font-weight: 600;
@@ -246,15 +258,15 @@ main {
     line-height: 16px;
     text-align: center;
     color: #111827;
+    text-align: center;
 }
 
 /* icon */
 
 .imgRecibido {
-    /* width: 23.33px;
-    height: 30px; */
-    width: 30px;
-    height: 23.33px;
+    width: 23.33px;
+    height: 30px;
+   
 }
 .imgEnvio {
     width: 30px;
@@ -279,7 +291,8 @@ main {
 }
 .new> h1 {
     font-size: 24px;
-    color:#2A5B45; ;
+    color:#2A5B45; 
+    text-shadow: 0px 4px 4px #00000040;
 }
 .newArticle {
     width: 1200px;
@@ -301,7 +314,19 @@ main {
     justify-content: center;
     align-items: center;
     /* padding: 24px; */
-    /* gap: 24px; */
+    gap: 24px;
+    box-shadow: #cecdce 0px 4px 4px;
+}
+.newCostaRica:hover, .newColombiana:hover, .newLaos:hover, .newEtiopia:hover  {
+    background-color: #F7F5F3;
+}
+
+.newDetail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
 }
 
 .button {
@@ -316,9 +341,19 @@ main {
     width: 61px;
     height: 16px;
     color: #000000;
+    font-size: 14px;
 }
 .linkImg img{
     width: 18px;
     height: 8px;
     color: #111827;
+}
+
+.linkNew {
+    width: 101px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
 }
