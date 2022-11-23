@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit';
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header {
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px  40px;
+    width: 1280px;
+    /* height: 36px; */
+}
+.title {
+    display: flex;
+    align-items: center;
+    gap: 7.3px;
+}
+.title h1 {
+    font-size: 23px;
+    font-weight: 400;
+    font-family: 'Outfit';
+    font-style: normal;
+}
+
+.linkTitle a {
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.linkTitle {
+    display: flex;
+    gap: 24px;
+    
+}
+
+.iniciarSession {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.iniciarSession a {
+    display: flex;
+    gap: 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.iniciarSession button {
+    background-color: #515051;;
+    color: #ffffff;
+    width: 130px;
+    height: 40px;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: none;
+    font-family: 'Outfit';
+    font-style: normal;
+}
+
+
+/* Main */
+main {
+    width: 1280px;
+    font-family: 'Outfit';
+    font-style: normal;
+}
+
+.mainOne {
+    display: flex;
+    justify-content: center;
+    padding: 48px 40px;
+    gap: 24px;
+    width: 1280px;
+    height: 486px;
+}
+.mainOneArticle {
+    padding: 127px 0;
+    width: 588px;
+    height: 232px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.mainOneArticle h2 {
+    color: #2A5B45;
+    width: 588px;
+    height: 24px;
+}
+.mainOneArticle h1 {
+    color: #000000;
+    width: 588px;
+    height: 88px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 44px;
+}
+
+.mainOneArticle p {
+    width: 588px;
+    height: 32px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #111827;
+}
+.mainOneArtic img {
+    width: 588px ;
+    height: 390px ;
+}
+.btnMainOne {
+    display: flex;
+    gap: 8px;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.btnorigenes {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 12px 24px ;
+    width: 168px;
+    height: 40px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.btnComprar {
+    background-color:#2A5B45;
+    color: #ffffff;
+    padding: 12px 24px;
+    width: 137px;
+    height: 40px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Two */
+
+.mainTwo {
+    background-image: url("../asset/imagenes/BackgroundMain.jpeg");
+    width: 1180px;
+    height: 380px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -100px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 147px;
+    /* gap: 24px; */
+}
+.mainTwo> h2 {
+    color: #ffffff;
+    text-align: center;
+    padding: 48px 465px 0px 465px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    width: 350px;
+    
+}
+.mainTwo article {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.mainTwo .pedido {
+    width: 316px;
+    height: 232px;
+    background-color: #ffffff;
+    margin: 50px 20px 48px 2px;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.mainTwo .envio {
+    width: 316px;
+    height: 232px;
+    background-color: #ffffff;
+    margin: 50px 20px 48px 50px;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainTwo .descuentosBeneficios{
+    width: 316px;
+    height: 232px;
+    background-color: #ffffff;
+    margin: 50px 20px 50px 40px;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imgIcono {
+    background-color: #2A5B45;
+    width: 60px;
+    height: 50px;
+    border-radius: 20px;
+    margin: 12px;
+    padding-top: 10px;
+}
+.pedido >h2, .envio >h2, .descuentosBeneficios > h2 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    width: 268px;
+    height: 24px;
+    text-align: center;
+    color: #2B2A2B;
+}
+
+.pedido>p, .envio>p, .descuentosBeneficios>p {
+    width: 268px;
+    height: 64px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #111827;
+}
+
+/* icon */
+
+.imgRecibido {
+    /* width: 23.33px;
+    height: 30px; */
+    width: 30px;
+    height: 23.33px;
+}
+.imgEnvio {
+    width: 30px;
+    height: 23.33px;
+}
+
+.imgBeneficio {
+    width: 30px;
+    height: 30px;
+}
+
+/* Novedades */
+
+.new {
+    width: 1280px;
+    height: 603px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+}
+.new> h1 {
+    font-size: 24px;
+    color:#2A5B45; ;
+}
+.newArticle {
+    width: 1200px;
+    height: 391px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.newCostaRica, .newColombiana, .newLaos, .newEtiopia {
+    width: 282px;
+    height: 391px;
+    border-radius: 8px;
+    border: solid 1px #E3DED7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 24px; */
+    /* gap: 24px; */
+}
+
+.button {
+    width: 60px;
+    height: 32px;
+    background-color: #2A5B45;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.linkNew a {
+    width: 61px;
+    height: 16px;
+    color: #000000;
+}
+.linkImg img{
+    width: 18px;
+    height: 8px;
+    color: #111827;
+}
