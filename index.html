@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="./styles/style.css">
 
     <title>Home</title>
@@ -203,7 +202,6 @@
         </section>
 
         <section class="contacto">
-            <div class="contactHijo">
                 <article class="contactUs">
                     <div class="contactDudas">
                         <h2>Entra en contacto con nosotros</h2>
@@ -243,36 +241,90 @@
                     </div>
                 </article>
 
-                <article>
-                    <form action="">
-                        <label for="name">Nombre Completo</label>
-                        <input type="text" id="name" placeholder="nombre">
+                <article class="for">
+                    <form action="" class="form">
+                        <div class="label">
+                            <label for="name">Nombre Completo</label>
+                            <input type="text" id="name">
+                        </div>
 
-                        <label for="email">Email</label>
-                        <input type="text" id="email" placeholder="email">
+                        <div class="label">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" >
+                        </div>
 
-                        <label for="telefono">Telefono </label>
-                        <input type="text" id="telefono" placeholder="telefono">
+                        <div class="label">
+                            <label for="telefono">Telefono </label>
+                            <input class="labelTlf" type="text" id="telefono" placeholder="+1 (555) 987-6543">
+                        </div>
 
-                        <label for="quejas"> </label>
-                        <textarea 
-                            name="quejas" id="quejas" cols="40" 
-                            rows="15" placeholder="¿En qué podemos ayudarte?">
-                        </textarea>
+                        <div class="label">
+                            <label for="quejas"> </label>
+                            <textarea 
+                                name="quejas" id="quejas" cols="25" 
+                                rows="9" placeholder="¿En qué podemos ayudarte?">
+                            </textarea>
+                        </div>
 
-                        <input type="checkbox" name="TérminosCondiciones" id="TérminosCondiciones" >
-                        <label for="TérminosCondiciones">Acepto la Política de Privacidad y los Términos y condiciones.</label>
-
+                        <div class="checkLabel">
+                            <input type="checkbox" name="TérminosCondiciones" id="TérminosCondiciones" >
+                            
+                            <label for="TérminosCondiciones"> Acepto la
+                                <a href="#">Política de Privacidad</a>
+                                y los
+                                <a href="#">Términos y condiciones.</a>
+                            </label>
+                        </div>
+                        <!--  -->
+                        
+                        <div class="btnLabel">
+                            <button class="btnSend">Enviar</button>
+                        </div>
                     </form>
                 </article>
-            </div>
-
         </section>
     </main>
 
-    <footer>
-        <article></article>
-        <article></article>
+    <footer class="footer">
+        <article class="foot">
+            <section class="footOne">
+                <h2>cafedealtura.com</h2>
+                <img src="./asset/icono/VectorTazaCafe.png" alt="">
+            </section>
+
+            <section class="footTwo">
+
+                <div class="fttOne">
+                    <p class="p">Te ayudamos en</p>
+                    <picture class="footPicture">
+                        <img src="./asset/icono/Phone.png" alt="Icon">
+                        <a href="tel:+34 919 49 05 18">+34 919 49 05 18</a>
+                    </picture>
+                    <picture class="footPictur">
+                        <img src="./asset/icono/Icon.png" alt="Icon">
+                        <a href="tel:+34 919 49 05 18">hola@cafedealtura.com</a>
+                    </picture>
+                </div>
+
+                <div class="fttTwo">
+                    <a href="#">Tienda</a>
+                    <a href="#">Suscripción</a>
+                    <a href="#">Para empresas</a>
+                    <a href="#">Sobre nosotros</a>
+                    <a href="#">Contacto</a>
+                </div>
+
+                <div class="fttTrois">
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Política de cookies</a>
+                    <a href="#">Términos y condiciones</a>
+                </div>
+            </section>
+           
+        </article>
+        <p class="footTrois">
+            Todos los derechos reservados - Café de Altura SL - 2022
+        </p>
     </footer>
     
 </body>

@@ -541,6 +541,8 @@ hr {
     height: 552px;
     display: flex;
     flex-direction: row;
+    background-color: #E3DED7;
+    gap: 10px;
 
 }
 
@@ -550,16 +552,19 @@ hr {
     flex-direction: row;
     gap: 24px;
     padding: 0 40px;
+    
 }
 
 .contactUs {
-    width: 588px;
-    /* height: 320px; */
+    /* width: 588px; */
+    height: 552px;
     display: flex;
     flex-direction: column;
     gap: 32px;
     padding-top: 116px;
-    background-color: #E3DED7;
+    /* background-color: #E3DED7; */
+    padding-left: 40px;
+    /* padding-right: 400px; */
 }
 .contactDudas {
     width: 588px;
@@ -571,6 +576,7 @@ hr {
     font-size: 18px;
     line-height: 24px;
     font-weight: 600;
+    color: #111827;
 
 }
 
@@ -579,6 +585,7 @@ hr {
     font-size: 14px;
     line-height: 16px;
     font-weight: 400;
+    color: #6B7280;
 }
 
 .contactDatos {
@@ -594,6 +601,7 @@ hr {
     font-size: 14px;
     line-height: 16px;
     font-weight: 400;
+    color: #6B7280;
 
 }
 .direction {
@@ -633,3 +641,171 @@ hr {
     gap: 3px;
 }
 
+/* Form */
+
+
+.for {
+    background-color: #FFFFFF;
+    width: 588px;
+    height: 552px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 470px;
+    height: 488px;
+    
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 12px;
+    color: #374151;
+}
+.label input {
+    width: 470px;
+    height: 30px;
+    border-radius: 6px;
+}
+.label textarea {
+    border-radius: 6px;
+}
+
+.checkLabel {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    
+}
+.checkLabel a, .checkLabel label {
+    color: #374151;
+    font-family: 14px;
+    font-weight: 400;
+}
+
+.btnSend {
+    background-color: #2A5B45;
+    width: 90px;
+    height: 40px;
+    padding: 12px 24px 20px 24px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.labelTlf {
+    padding: 15px;
+}
+
+
+/* Footer */
+
+.footer {
+    width: 1280px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    gap: 16px;
+}
+.foot {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.footOne {
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    gap: 7px ;
+    width: 288px;
+    padding-top: 10px;
+}
+
+.footOne h2 {
+    font-size: 23px;
+    padding-left: 100px;
+}
+.footOne img {
+    width: 20px;
+    height: 24px;
+}
+
+.footTwo {
+    width: 1132px;
+    /* height: 152px; */
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.fttOne {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.p {
+    color: #ffffff;
+}
+
+.footPicture {
+    display: flex;
+    flex-direction: row;
+    background-color: #515051;
+    width: 182px;
+    gap: 8px;
+    border-radius: 4px;
+    justify-content: center;
+    padding: 8px 15px;
+}
+.footPicture a, .footPictur a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footPictur {
+    display: flex;
+    flex-direction: row;
+    background-color: #515051;
+    width: 232px;
+    gap: 8px;
+    border-radius: 4px;
+    justify-content: center;
+    padding: 9px 15px;
+}
+
+.fttTwo a, .fttTrois a{
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    gap: 16px;
+    font-size: 14px;
+    padding-top: 8px;
+
+}
+
+.footTrois {
+    background-color: #2B2A2B;
+    height: 40px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+}
