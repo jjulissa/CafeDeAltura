@@ -202,13 +202,69 @@
             </div>
         </section>
 
-        <section>
-            <div>
-                <article>
-                    
+        <section class="contacto">
+            <div class="contactHijo">
+                <article class="contactUs">
+                    <div class="contactDudas">
+                        <h2>Entra en contacto con nosotros</h2>
+                        <p>
+                            Si tienes dudas, ponte en contacto con nosotros a través 
+                            del formulario y te responderemos lo antes posible.
+                        </p>
+                    </div>
+
+                    <div class="contactDatos">
+                        <p>
+                            TAmbién puedes ponerte en contacto con nostros en nuestra 
+                            dirección o a través del teléfono de la tienda.
+                        </p>
+                        <address>
+                            <p class="direction">
+                                742 Evergreen Terrace
+                            </p>
+                            <p>
+                                Springfield, OR 12345
+                            </p>
+
+                        </address>
+
+                        <address class="phoneEmail"> 
+                            <div class="celphone">
+                                <img src="./asset/icono/Phone.png" alt="Phone">
+                                <a href="tel:+1(555)123-4567">+1(555)123-4567</a>
+                            </div>
+
+                            <div class="emailContact">
+                                <img src="./asset/icono/Icon.png" alt="Icon">
+                                <a href="mailto:support@example.com">support@example.com</a>
+                            </div>
+                        </address>
+                        <p class="busquedaTrabajo">¿Buscas un trabajo?<a href="#">Ver nuestras ofertas.</a> </p>
+                    </div>
                 </article>
 
-                <article></article>
+                <article>
+                    <form action="">
+                        <label for="name">Nombre Completo</label>
+                        <input type="text" id="name" placeholder="nombre">
+
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="email">
+
+                        <label for="telefono">Telefono </label>
+                        <input type="text" id="telefono" placeholder="telefono">
+
+                        <label for="quejas"> </label>
+                        <textarea 
+                            name="quejas" id="quejas" cols="40" 
+                            rows="15" placeholder="¿En qué podemos ayudarte?">
+                        </textarea>
+
+                        <input type="checkbox" name="TérminosCondiciones" id="TérminosCondiciones" >
+                        <label for="TérminosCondiciones">Acepto la Política de Privacidad y los Términos y condiciones.</label>
+
+                    </form>
+                </article>
             </div>
 
         </section>
