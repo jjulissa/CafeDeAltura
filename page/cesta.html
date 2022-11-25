@@ -4,9 +4,162 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/estilo.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/succes.css">
     <title>Cesta</title>
 </head>
 <body>
+    <header>
+        <div class="title">
+            <h1>cafedealtura.com</h1>
+            <img src="../asset/icono/VectorTazaCafe.png" alt="Logo">
+        </div>
+
+        <div class="linkTitle">
+            <a href="./tiendas.html">Tienda</a>
+            <a href="./suscripcion.html">Suscripción</a>
+            <a href="./empresas.html">Para empresas</a>
+            <a href="./nosotros.html">Sobre nosotros</a>
+            <a href="./contacto.html">Contacto</a>
+        </div>
+
+        <div class="iniciarSession">
+            <a href="tel:+34919490518"><img src="../asset/icono/IconCel.png" alt="">+34919490518</a>
+            <button>Iniciar Sesión</button>
+        </div>
+
+        <div class="carrito">
+            <a href="../page/cesta.html">
+                <img src="../asset/icono/Carito.png" alt="Carito">
+                <img class="icon2Tienda" src="../asset/icono/2.png" alt="2">
+            </a>
+        </div>
+    </header>
+
+
+    <!-- Main -->
+
+    <main>
+
+        <h1 class="titleCesta">Cesta (2)</h1>
+
+        <section class="cajaCesta">
+            <div class="cestaIzquierda">
+                <p class="product">Productos</p>
+            
+                <article class="cestaOne">
+                    <div class="masoMenosxs">
+                        <img src="../asset/icono/menos.png" alt="menos">
+                        <img src="../asset/icono/mas1menos.png" alt="cesta">
+                        <img src="../asset/icono/mas.png" alt="mas">
+                    </div>
+
+                    <div class="fotoCfeCesta">
+                        <img class="" src="../asset/imagenes/colombianaCoffe.png" alt="colombianaCoffe">
+                    </div>
+
+                    <div class="titCesta">
+                        <p>Colombia Los Naranjos</p>
+                        <p>Paquete de café, 250 gr</p>
+                    </div>
+
+                    <p class="naranjosTitle">9,00 €</p>
+                </article>
+
+                <div class="hrmedio"></div>
+
+                <article>
+                    
+                    <div class="masoMenosxs">
+                        <img src="../asset/icono/menos.png" alt="menos">
+                        <img src="../asset/icono/mas1menos.png" alt="cesta">
+                        <img src="../asset/icono/mas.png" alt="mas">
+                    </div>
+
+                    <div>
+                        <img class="fotoCfeCesta" src="../asset/icono/Colombia La Casita .png" alt="ColombiaLaCasita">
+                    </div>
+            
+                    <div>
+                        <p>Colombia La Casita</p>
+                        <p>Paquete de café, 250 gr</p>
+                    </div>
+                    <p>9,00 €</p>
+                </article>
+            
+                <h2>Seleccionar envío</h2>
+
+                <article>
+                    <input type="radio"  name="envio" id="envio">
+                    <label for="sexo">Envío 5-7 días</label>
+                    <p>Opción estándar sin seguimiento</p>
+                    <button>GRATIS</button>
+                </article>
+
+                <article></article>
+
+                <article>
+                    <input type="radio"  name="envio" id="envio">
+                    <label for="sexo">Envío urgente 24h</label>
+                    <p>Recibe tu pedido en las siguientes 24h (Para pedidos realizados antes de las 13:00).</p>
+                    <button>9,00 €</button>
+                </article>
+
+                
+            </div>
+
+            <div class="cajaDerecha">
+                <arcticle class="total">
+                    <p class="totalCarrito">Total del carrito</p>
+
+                    <div class="hrTotalCarrito"></div>
+
+                    <div class="subTotal">
+                        <p>SUBTOTAL</p>
+                        <p>18,00 €</p>
+                    </div>
+
+                    <div class="envio">
+                        <p>ENVÍO</p>
+                        <p>GRATIS</p>
+                    </div>
+
+                    <div class="hrTotal"></div>
+
+                    <div class="tota">
+                        <p class="total">TOTAL</p>
+                        <div class="detalleTotal">
+                            <p class="18Euro">18,00 €</p>
+                            <p class="incluye">Incluye 3,78€ de IVA</p>
+                        </div>
+                    </div>
+                </arcticle>
+
+                <arcticle btnTotal>
+                    <button class="btnTotalOne">Ir a checkout</button>
+                    <button class="btnTotalTwo">Seguir comprando</button>
+                </arcticle>
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+
+
+
+<!-- Footer -->
+
+    <p class="footTrois">
+            Todos los derechos reservados - Café de Altura SL - 2022
+    </p>
     
 </body>
 </html>

@@ -5,32 +5,28 @@
     font-style: normal;
     box-sizing: border-box;
 }
-
 /* 
-    Tiendas
-    Cuestas
+    Checkout
+    Succes
 */
-
 body {
     width: 1280px;
 }
 
-/* Header Tiendas */
+/*  Succes */
 
-.carrito {
+
+/* Header */
+.headSucces {
+    background-color: #000000 ;
+    height: 40px;
+    color: #ffffff;
     display: flex;
     flex-direction: row;
-    gap: 8px;
     justify-content: center;
     align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
 }
 
-.linkTitle a :visited {
-    background-color: #f7f5f31a;
-    border: 5px #f7f5f31a solid;
-}
-
-
-
-
-/* Cesta */
