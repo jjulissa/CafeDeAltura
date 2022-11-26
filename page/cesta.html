@@ -43,13 +43,13 @@
 
     <!-- Main -->
 
-    <main>
+    <main class="mainCesta">
 
         <h1 class="titleCesta">Cesta (2)</h1>
 
         <section class="cajaCesta">
             <div class="cestaIzquierda">
-                <p class="product">Productos</p>
+                <p class="productCesta">Productos</p>
             
                 <article class="cestaOne">
                     <div class="masoMenosxs">
@@ -72,7 +72,7 @@
 
                 <div class="hrmedio"></div>
 
-                <article>
+                <article class="cestaTwo">
                     
                     <div class="masoMenosxs">
                         <img src="../asset/icono/menos.png" alt="menos">
@@ -81,35 +81,38 @@
                     </div>
 
                     <div>
-                        <img class="fotoCfeCesta" src="../asset/icono/Colombia La Casita .png" alt="ColombiaLaCasita">
+                        <img class="fotoCfeCesta" src="../asset/imagenes/chicoLaCasita.png" alt="ColombiaLaCasita">
                     </div>
             
-                    <div>
+                    <div class="titCesta">
                         <p>Colombia La Casita</p>
                         <p>Paquete de café, 250 gr</p>
                     </div>
-                    <p>9,00 €</p>
+                    <p class="precioCasita">9,00 €</p>
                 </article>
             
-                <h2>Seleccionar envío</h2>
+                <h2 class="seleccionar">Seleccionar envío</h2>
 
-                <article>
+                <article class="envioDias">
                     <input type="radio"  name="envio" id="envio">
-                    <label for="sexo">Envío 5-7 días</label>
-                    <p>Opción estándar sin seguimiento</p>
-                    <button>GRATIS</button>
+                    <div class="labelEnvio">
+                        <label for="envioDias">Envío 5-7 días</label>
+                        <p>Opción estándar sin seguimiento</p>
+                    </div>
+                    <p class="price">GRATIS</p>
                 </article>
 
-                <article></article>
+                <article class="hrmedio"></article>
 
-                <article>
+                <article class="envioUrgente">
                     <input type="radio"  name="envio" id="envio">
-                    <label for="sexo">Envío urgente 24h</label>
-                    <p>Recibe tu pedido en las siguientes 24h (Para pedidos realizados antes de las 13:00).</p>
-                    <button>9,00 €</button>
+                    <div class="labelEnvio">
+                        <label for="envioUrgente">Envío urgente 24h</label>
+                        <p>Recibe tu pedido en las siguientes 24h (Para pedidos realizados antes de las 13:00).</p>
+                    </div>
+                    <p class="price">9,00 €</p>
                 </article>
 
-                
             </div>
 
             <div class="cajaDerecha">
@@ -123,37 +126,30 @@
                         <p>18,00 €</p>
                     </div>
 
-                    <div class="envio">
+                    <div class="envioCesta">
                         <p>ENVÍO</p>
                         <p>GRATIS</p>
                     </div>
 
-                    <div class="hrTotal"></div>
+                    <div class="hrTotalCarrito"></div>
 
                     <div class="tota">
-                        <p class="total">TOTAL</p>
+                        <p class="tt">TOTAL</p>
                         <div class="detalleTotal">
-                            <p class="18Euro">18,00 €</p>
+                            <p class="euro18">18,00 €</p>
                             <p class="incluye">Incluye 3,78€ de IVA</p>
                         </div>
                     </div>
                 </arcticle>
 
-                <arcticle btnTotal>
-                    <button class="btnTotalOne">Ir a checkout</button>
-                    <button class="btnTotalTwo">Seguir comprando</button>
+                <arcticle class="btnTotal" >
+                    <a href="../page/succes.html"><button class="btnTotalOne">Ir a checkout</button></a>
+                    <a href="../page/tiendas.html"><button class="btnTotalTwo">Seguir comprando</button></a>
                 </arcticle>
             </div>
 
         </section>
-
-
-
     </main>
-
-
-
-
 
 <!-- Footer -->
 

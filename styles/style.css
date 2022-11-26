@@ -621,8 +621,8 @@ hr {
 }
 
 .celphone img, .emailContact img  {
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
 }
 .celphone a, .emailContact a {
     color: #6B7280;
@@ -721,6 +721,8 @@ hr {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 28px;
+    
     
 }
 
@@ -730,7 +732,7 @@ hr {
     flex-direction: row;
     gap: 7px ;
     width: 288px;
-    padding-top: 10px;
+    /* padding-top: 25px; */
 }
 
 .footOne h2 {

@@ -5,6 +5,7 @@
     font-style: normal;
     box-sizing: border-box;
 }
+
 /* 
     Checkout
     Succes
@@ -30,3 +31,214 @@ body {
     line-height: 16px;
 }
 
+.mainSucces, .mainOneSucces {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-content: center;
+    width: 1280px;
+    
+}
+
+.mainSucces {
+    width: 1280px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.iconSucces {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    /* gap: 8px;
+    border-radius: 20px; */
+}
+.pedidoExito {
+    color: #2A5B45;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+.pedido12387 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    width: 346px;
+    align-self: center;
+    height: 48px;
+    text-align: center;
+}
+
+.mainpedidoSucces {
+    width: 1200px;
+    /* height: 391px; */
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 24px;
+    background-color: #F7F5F3;
+    padding: 24px;
+    border-radius: 10px;
+    
+}
+
+.tuPedido {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.losNaranjos {
+    width: 1152px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    /* height: 56px; */
+}
+
+.losNaranjos>p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    /* width: 84px; */
+    padding-left: 90px;
+}
+
+.imgColombCoffe img {
+   width: 50px;
+    height: 45px;
+}
+.imgColombCoffe {
+    display: flex;
+    flex-direction: row;    
+    gap: 24px;
+
+}
+
+.succesDetail {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    line-height: 16px;
+    color: #000000;
+    
+
+}
+
+.succesDetail p:nth-last-of-type(1) {
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.succesDetail p:nth-last-of-type(2) {
+    font-weight: 600;
+    font-size: 14px;
+}
+.detailSucces {
+    width: 1152px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hrSucces {
+    width: 1152px;
+    height: 2px;
+    background-color: #E3DED7;   
+}
+
+.subtotalSucces {
+    width: 1152px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #000000;
+
+}
+.totalSuccesIva {
+    display: flex;
+    flex-direction: column;
+    width: 107px;
+    gap: 8px;
+}
+
+.totalSuccesIva p:nth-last-of-type(2) {
+    width: 108px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    padding-left: 55px;
+
+}
+
+.totalSuccesIva p:nth-last-of-type(1) {
+    width: 108px;
+    font-size: 10px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: right;
+}
+
+.btnVolverTienda {
+    width: 168px;
+    height: 40px;
+    background-color: #2A5B45;
+    padding: 12px 24px;
+    border-radius: 5px;
+    display: flex;
+    align-content: center;
+    padding: 12px 24px;
+    gap: 8px;
+
+}
+
+.btnVolverTienda a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    
+}
+
+.succesVolverTienda {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Checkout */

@@ -6,9 +6,10 @@
     box-sizing: border-box;
 }
 
+
 /* 
     Tiendas
-    Cuestas
+    Cestas
 */
 
 body {
@@ -32,5 +33,246 @@ body {
 
 
 
-
 /* Cesta */
+
+mainCesta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 10px;
+    gap: 24px;
+}
+
+.titleCesta {
+    width: 110px;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #2A5B45;
+
+}
+
+.cajaCesta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cestaIzquierda {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 8px;
+    width: 792px;
+}
+
+.productCesta {
+    color: #000000;
+    font-size: 18px;
+}
+
+.cestaOne, .cestaTwo {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.masoMenosxs {
+    width: 88px;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.masoMenosxs img {
+    width: 12px;
+    height: 15px;
+}
+
+.fotoCfeCesta img {
+    width: 55px; 
+    height: 55px;
+}
+.titCesta {
+    width: 506px;
+    height: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.titCesta p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+
+}
+.naranjosTitle, .precioCasita {
+    width: 54px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.hrmedio {
+    width: 776px;
+    height: 2px;
+    background-color: #E3DED7;
+}
+
+.seleccionar {
+    width: 143px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.envioDias, .envioUrgente {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: 776px;
+    height: 36px;
+}
+
+.labelEnvio {
+    width: 657px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.labelEnvio label {
+    font-size: 14px;
+    color: #000000;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.labelEnvio p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #000000;
+}
+
+.price  {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.cajaDerecha {
+    width: 384px;
+    background-color: #F7F5F3;
+    padding: 24px;
+    /* height: 280px; */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-self: flex-start;
+
+}
+
+.total {
+    width: 336px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.totalCarrito {
+    width: 129px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #000000;
+}
+.hrTotalCarrito {
+    width: 336px;
+    height: 1px;
+    background-color: #E3DED7;
+    color: #000000;
+}
+.subTotal , .envioCesta {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #000000;
+    justify-content: space-between
+}
+
+.tota {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+
+}
+
+.tt {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    color:#000000;
+}
+
+.detalleTotal {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.euro18 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: right;
+
+}
+
+.incluye {
+    color: #515051;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: right;
+}
+
+
+
+.btnTotal {
+    width: 310px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.btnTotalOne {
+    width: 129px;
+    height: 40px;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #2A5B45;
+    border: none;
+}
+
+.btnTotalTwo {
+    width: 165px;
+    height: 40px;
+    border-radius: 4px;
+    color: #2A5B45;
+    border: none;
+}
+
+
+
+
+
