@@ -38,6 +38,181 @@
             </a>
         </div>
     </header>
+
+    <main>
+        <section>
+            <h1>Checkout</h1>
+            <article>
+                <div>
+                    <p>Seleccionar método de pago</p>
+                    <article> 
+                        <div> 
+                            <input type="radio" name="" id="tarjetaDebito">
+                                <p>Tarjeta de débito</p>
+                                <p>Opción estándar sin seguimiento</p>
+                        </div>
+                            <p>GRATIS</p>
+                    </article>
+
+                    <article>
+                        <div>
+                            <label for="titular">Titular</label>
+                            <input type="text" placeholder="Nombre del titular" name="titular" id="titular">
+                        </div>
+
+                        <div>
+                            <label for="NúmeroTarjeta">Número de la tarjeta</label>
+                            <input type="number" name="NúmeroTarjeta" id="NúmeroTarjeta" placeholder="1234 1234 1234 1234">
+                        </div>
+
+                        <div>
+                            <section>
+                                <label for="FechaCaducidad">Fecha de caducidad</label>
+                                <input type="number" name="FechaCaducidad" id="FechaCaducidad" placeholder="MM / YY">
+                            </section>
+
+                            <section>
+                                <label for="CVC">CVC</label>
+                                <input type="number" placeholder="123" name="CVC" id="CVC">
+                            </section>
+                        </div>
+                    </article>
+
+                    <div class="hrCheckout"></div>
+
+                    <article>
+                        <div> 
+                            <input type="radio" name="tarjetaBancaria" id="tarjetaBancaria">
+                                <p>Transferencia bancaria a la cuenta ES12 1234 1234 123457890</p>
+                                <p>Será necesario recibir el comprobante de la transferencia para preparar tu pedido</p>
+                        </div>
+                            <p>9,00 €</p>
+                    </article>
+
+                    <div class="hrCheckout"></div>
+
+                    <article>
+                        <div>
+                            <input type="radio" name="Bizum" id="Bizum">
+                            <p>Bizum</p>
+                            <p>Será necesario recibir el comprobante de la transferencia para preparar tu pedido</p>
+                        </div>
+                        <p>9,00 €</p>
+                    </article>
+
+                    <p>Dirección de envío</p>
+
+                    <article>
+
+                        <div>
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="name" placeholder="Nombre">
+                        </div>
+
+                        <div>
+                            <label for="apellidos">Apellidos</label>
+                            <input type="text" name="apellidos" id="apellidos" placeholder="apellidos">
+                        </div>
+
+                        <div>
+                            <label for="name">Teléfono</label>
+                            <input type="tel" name="teléfono" id="teléfono" placeholder="teléfono">
+                        </div>
+
+                        <div>
+                            <label for="name">Email</label>
+                            <input type="email" name="email" id="email" placeholder="email">
+                        </div>
+
+                        <div>
+                            <label for="name">País</label>
+                            <input type="text" name="país" id="país" placeholder="país">
+                            <select name="select">
+                                <option value="haiti">Haiti</option>
+                                <option value="espana" selected>Espana</option>
+                                <option value="argentina">Argentina</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <article>
+                                <label for="población">Población</label>
+                                <input type="text" id="población" name="población">
+                            </article>
+
+                            <article>
+                                <label for="cp">CP</label>
+                                <input type="text" id="cp" name="cp">
+                            </article>
+                        </div>
+
+                        <div>
+                            <article>
+                                <label for="calle">Calle</label>
+                                <input type="text" id="calle" name="calle">
+                            </article>
+
+                            <article>
+                                <label for="nº">Nº</label>
+                                <input type="text" id="nº" name="nº">
+                            </article>
+
+                            <article>
+                                <label for="piso">Piso</label>
+                                <input type="text" id="piso" name="piso">
+                            </article>
+                            
+                            <article>
+                                <label for="puerta">Puerta</label>
+                                <input type="text" id="puerta" name="puerta">
+                            </article>
+
+                        </div>
+                    </article>
+
+                </div>
+
+
+                <div class="cajaDerecha">
+                    <arcticle class="total">
+                        <p class="totalCarrito">Total del carrito</p>
+
+                        <div class="hrTotalCarrito"></div>
+
+                        <div class="subTotal">
+                            <p>SUBTOTAL</p>
+                            <p>18,00 €</p>
+                        </div>
+
+                        <div class="envioCesta">
+                            <p>ENVÍO</p>
+                            <p>GRATIS</p>
+                        </div>
+
+                        <div class="hrTotalCarrito"></div>
+
+                        <div class="tota">
+                            <p class="tt">TOTAL</p>
+                            <div class="detalleTotal">
+                                <p class="euro18">18,00 €</p>
+                                <p class="incluye">Incluye 3,78€ de IVA</p>
+                            </div>
+                        </div>
+                    </arcticle>
+                    <arcticle class="btnPagarPedido" >
+                        <a href="../page/succes.html"><button class="btnPagarCheckout">Pagar y realizar pedido</button></a>
+                    </arcticle>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <p class="footTrois">
+            Todos los derechos reservados - Café de Altura SL - 2022
+    </p>
     
 </body>
 </html>

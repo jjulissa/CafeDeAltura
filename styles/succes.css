@@ -230,15 +230,14 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* Checkout */
+
+.btnPagarCheckout {
+    background-color: #2A5B45;
+    width: 196px;
+    height: 40px;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 12px 24px;
+    
+}
