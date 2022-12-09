@@ -151,6 +151,10 @@ body {
     color: #000000;
     font-weight: 600;
     line-height: 16px;
+    
+}
+.lab {
+    accent-color: green;
 }
 
 .labelEnvio p {

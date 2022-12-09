@@ -225,11 +225,6 @@ body {
 
 
 
-
-
-
-
-
 /* Checkout */
 
 .btnPagarCheckout {
@@ -237,7 +232,211 @@ body {
     width: 196px;
     height: 40px;
     color: #ffffff;
+    border: none;
     border-radius: 4px;
     padding: 12px 24px;
     
+} 
+.titleCheckout {
+    text-align: center;
+    color: #2A5B45; 
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+
 }
+.mainCheckout {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 24px;
+    flex-wrap:wrap;
+
+} 
+.mainCheck {
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    
+} 
+.mainChec {
+    width: 90%;
+    display: flex;
+    flex-direction: column; 
+    /* gap: 24px; */
+    padding: 8px;
+} 
+.seleccionaCheck {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px; 
+    padding: 8px;
+} 
+.debitoCheck, .medioCheck {
+    display: flex;
+    flex-direction: row; 
+    width: 80%;
+    gap: 16px;
+    padding: 8px;
+} 
+.inputChec{
+    accent-color: #2A5B45 ;
+} 
+.paraCh, .transferenciaCheck {
+    display: flex;
+    flex-direction: column;
+    /* gap: 4px;  */
+    width: 90%; 
+    padding-right: 40px;
+} 
+.paraCh p, .transferenciaCheck p {
+    font-size: 10px;
+    line-height: 16px;
+    font-weight: 600;
+    color:#000000; 
+} 
+
+.debitoCheck .opcion {
+    font-size: 10px; 
+    font-weight:200;
+}
+.paraGratisCheck, .para9Check {
+    filter: blur(var(--value, 1rem));
+} 
+.titularCheck {
+    display: flex;
+    flex-direction: column; 
+    gap: 8px; 
+    padding: 8px; 
+    width: 38%;
+    padding-bottom: 20px;
+} 
+.nameTitular, .numeroTarjetaCheck, .fechaCaducidadCheck {
+    display: flex;
+    flex-direction: column;
+    gap: 3px; 
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 16px; 
+
+} 
+.fechaCaducidadCheck {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    /* width: 50%; */
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+
+
+} 
+.hrCheckout, .hrCheckoutUno {
+    width: 90%;
+    height: 2px;
+    padding-left: 8px;
+    background-color: #E3DED7;
+}
+.bizumCheck {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding: 8px ;
+   /* align-items: center; */
+} 
+.bizum {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    width: 70%;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+} 
+.imgBizum {
+    width: 60px;
+    height: 25px;
+} 
+.envioCheck {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    padding: 10px;
+}  
+
+.addressCheck {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+    padding-left: 8px;
+} 
+.addressUno, .addressDos, 
+.addressTres, .addressCuatro, 
+.addressCinco {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    font-size: 12px;
+    font-weight: 400; 
+    line-height: 16px; 
+    color: #000000; 
+    gap: 3px;
+}
+input {
+    border: #D1D5DB 2px solid;
+    border-radius: 4px;
+     
+} 
+.addressSeis {
+    display: flex; 
+    flex-direction: row;
+    gap: 24px; 
+    font-size: 12px; 
+    line-height: 16px; 
+    font-weight: 400;
+    color: #000000;
+} 
+.poblCheck, .cpCheck {
+    display: flex;
+    flex-direction: column; 
+    gap: 3px; 
+    width: 50%;
+} 
+.addressSiete {
+    display: flex;
+    flex-direction: row; 
+    gap: 10px;
+
+} 
+.calle, .numero, .piso, .puerta { 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* gap: 3px; */
+    /* width: 30%; */
+    
+} 
+.calle input,
+.numero input,
+.piso input,
+.puerta input {
+    width: 100%;
+} 
+
+input {
+    padding: 10px; 
+/* PouwKiteColorLiViniAvelPorDefectoA */
+    outline: none;
+}
+input:hover { 
+    border: 2px solid #9B9EA3;
+} 
+input:focus {
+    border: 2px solid #2A5B45;}

@@ -40,129 +40,130 @@
     </header>
 
     <main>
-        <section>
-            <h1>Checkout</h1>
-            <article>
-                <div>
-                    <p>Seleccionar método de pago</p>
-                    <article> 
-                        <div> 
-                            <input type="radio" name="" id="tarjetaDebito">
-                                <p>Tarjeta de débito</p>
-                                <p>Opción estándar sin seguimiento</p>
+        <section class="mainCheckout"> 
+            <h1 class="titleCheckout">Checkout</h1>
+            <article class="mainCheck">
+                <div class="mainChec">
+                    <p class="seleccionaCheck">Seleccionar método de pago</p>
+                    <article class="debitoCheck"> 
+                        <input class="inputChec" type="radio" name="" id="tarjetaDebito">
+                        <div class="paraCh"> 
+                            <p>Tarjeta de débito</p>
+                            <p class="opcion">Opción estándar sin seguimiento</p>
                         </div>
-                            <p>GRATIS</p>
+                        <p class="paraGratisCheck">GRATIS</p>
                     </article>
 
-                    <article>
-                        <div>
+                    <article class="titularCheck">
+                        <div class="nameTitular">
                             <label for="titular">Titular</label>
                             <input type="text" placeholder="Nombre del titular" name="titular" id="titular">
                         </div>
 
-                        <div>
+                        <div class="numeroTarjetaCheck">
                             <label for="NúmeroTarjeta">Número de la tarjeta</label>
                             <input type="number" name="NúmeroTarjeta" id="NúmeroTarjeta" placeholder="1234 1234 1234 1234">
                         </div>
 
-                        <div>
-                            <section>
-                                <label for="FechaCaducidad">Fecha de caducidad</label>
-                                <input type="number" name="FechaCaducidad" id="FechaCaducidad" placeholder="MM / YY">
+                        <div class="fechaCaducidadCheck">
+                            <section class="fechaCheck">
+                                <label class="labelChico" for="FechaCaducidad">Fecha de caducidad</label>
+                                <input type="date" name="FechaCaducidad" id="FechaCaducidad" placeholder="MM / YY">
                             </section>
 
-                            <section>
-                                <label for="CVC">CVC</label>
+                            <section class="cvcCheck">
+                                <label class="labelChico" for="CVC">CVC</label>
                                 <input type="number" placeholder="123" name="CVC" id="CVC">
                             </section>
                         </div>
                     </article>
 
-                    <div class="hrCheckout"></div>
+                    <div class="hrCheckoutUno"></div>
 
-                    <article>
-                        <div> 
-                            <input type="radio" name="tarjetaBancaria" id="tarjetaBancaria">
-                                <p>Transferencia bancaria a la cuenta ES12 1234 1234 123457890</p>
-                                <p>Será necesario recibir el comprobante de la transferencia para preparar tu pedido</p>
-                        </div>
-                            <p>9,00 €</p>
-                    </article>
-
-                    <div class="hrCheckout"></div>
-
-                    <article>
-                        <div>
-                            <input type="radio" name="Bizum" id="Bizum">
-                            <p>Bizum</p>
+                    <article class="medioCheck">
+                        <input type="radio" name="tarjetaBancaria" id="tarjetaBancaria">
+                        <div class="transferenciaCheck"> 
+                            <p>Transferencia bancaria a la cuenta ES12 1234 1234 123457890</p>
                             <p>Será necesario recibir el comprobante de la transferencia para preparar tu pedido</p>
                         </div>
-                        <p>9,00 €</p>
+                            <p class="para9Check">9,00 €</p>
                     </article>
 
-                    <p>Dirección de envío</p>
+                    <div class="hrCheckout"></div>
 
-                    <article>
+                    <article class="bizumCheck">
+                        <div class="bizum">
+                            <input type="radio" name="Bizum" id="Bizum">
+                            <p>Bizum</p>
+                            <img class="imgBizum" src="../asset/imagenes/Bizum.png" alt="imagen">
+                        </div>
+                        <p class="para9Check">9,00 €</p>
+                    </article>
 
-                        <div>
+                    <p class="envioCheck">Dirección de envío</p>
+
+                    <article class="addressCheck">
+
+                        <div class="addressUno">
                             <label for="name">Nombre</label>
                             <input type="text" name="name" id="name" placeholder="Nombre">
                         </div>
 
-                        <div>
+                        <div class="addressDos">
                             <label for="apellidos">Apellidos</label>
                             <input type="text" name="apellidos" id="apellidos" placeholder="apellidos">
                         </div>
 
-                        <div>
+                        <div class="addressTres">
                             <label for="name">Teléfono</label>
-                            <input type="tel" name="teléfono" id="teléfono" placeholder="teléfono">
+                            <input type="tel" name="teléfono" id="teléfono" placeholder="+34 600 6000 600">
                         </div>
 
-                        <div>
+                        <div class="addressCuatro">
                             <label for="name">Email</label>
                             <input type="email" name="email" id="email" placeholder="email">
                         </div>
 
-                        <div>
+                        <div class="addressCinco">
                             <label for="name">País</label>
-                            <input type="text" name="país" id="país" placeholder="país">
-                            <select name="select">
+                            <!-- <input type="text" name="país" id="país" placeholder="país"> -->
+                            <select name="select"> 
+                                <option value="seleccionar" selected>seleccionar</option>
                                 <option value="haiti">Haiti</option>
-                                <option value="espana" selected>Espana</option>
+                                <option value="espana">Espana</option>
                                 <option value="argentina">Argentina</option>
                             </select>
                         </div>
 
-                        <div>
-                            <article>
+                        <div class="addressSeis">
+                            <article class="poblCheck">
                                 <label for="población">Población</label>
                                 <input type="text" id="población" name="población">
                             </article>
 
-                            <article>
+                            <article class="cpCheck">
                                 <label for="cp">CP</label>
-                                <input type="text" id="cp" name="cp">
+                                <input type="text" id="cp" name="cp" placeholder="123">
                             </article>
                         </div>
 
-                        <div>
-                            <article>
+                        <div class="addressSiete">
+                            <article class="calle">
                                 <label for="calle">Calle</label>
                                 <input type="text" id="calle" name="calle">
                             </article>
 
-                            <article>
+                            <article class="numero">
                                 <label for="nº">Nº</label>
                                 <input type="text" id="nº" name="nº">
                             </article>
 
-                            <article>
+                            <article class="piso">
                                 <label for="piso">Piso</label>
                                 <input type="text" id="piso" name="piso">
                             </article>
                             
-                            <article>
+                            <article class="puerta">
                                 <label for="puerta">Puerta</label>
                                 <input type="text" id="puerta" name="puerta">
                             </article>
