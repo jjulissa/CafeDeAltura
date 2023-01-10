@@ -18,7 +18,16 @@ const caja = {
 }); 
 
 
-// Preguntas frecuentes  
+// Preguntas frecuentes  Home 
+
+let iconoJs = document.querySelectorAll(".iconoJs"); 
+let parafoJs = document.querySelectorAll(".parafoJs"); 
+
+iconoJs.forEach( (el, i) =>  { 
+	el.addEventListener("click", (event) => { 
+        parafoJs[i].classList.toggle("parafoJs")
+    }) 
+});
 
 
 

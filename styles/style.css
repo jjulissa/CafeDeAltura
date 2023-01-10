@@ -279,7 +279,13 @@ main {
     height: 30px;
 }
 
-/* Novedades */
+/* JS */ 
+
+.parafoJs {
+    display: none;
+}
+
+/* Novedades */ 
 
 .new {
     width: 1280px;
@@ -463,7 +469,7 @@ hr {
     width: 10px;
     height: 6px;
     /* color: #ffffff; */
-}
+} 
 
 /* Coffee Shop */
 
@@ -811,4 +817,5 @@ hr {
     font-size: 14px;
     font-weight: 600;
     line-height: 16px;
-}
+} 
+
