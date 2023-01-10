@@ -14,7 +14,7 @@ body {
     width: 1280px;
 }
 
-/*  Succes */
+/*  Success */
 
 
 /* Header */
@@ -282,6 +282,9 @@ body {
     gap: 16px;
     padding: 8px;
 } 
+.medioCheck {
+    padding-top: 20px;
+}
 .inputChec{
     accent-color: #2A5B45 ;
 } 
