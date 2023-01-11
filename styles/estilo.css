@@ -75,10 +75,14 @@ body {
     font-size: 18px;
 }
 
-.cestaOne, .cestaTwo {
+.cestaOne, .cestaTwo, .CadaCesta {
     display: flex;
     flex-direction: row;
     gap: 24px;
+} 
+.fotoCafe {
+    width: 100px; 
+    height: 50px;
 }
 
 .masoMenosxs {
