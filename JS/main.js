@@ -6,7 +6,7 @@ let btnAnadir = document.querySelectorAll(".btnAddJs");
 let carrito = [];
 btnAnadir.forEach( (el, i) =>  { 
 	el.addEventListener("click", (event) => { 
-        console.log(event.target.previousElementSibling.innerText)
+        console.log(event.target.previousElementSibling.innerText); 
 const caja = { 
     image: event.target.previousElementSibling.previousElementSibling.src, 
     title: event.target.previousElementSibling.children[0].innerText, 
@@ -25,7 +25,8 @@ let parafoJs = document.querySelectorAll(".parafoJs");
 
 iconoJs.forEach( (el, i) =>  { 
 	el.addEventListener("click", (event) => { 
-        parafoJs[i].classList.toggle("parafoJs")
+        parafoJs[i].classList.toggle("parafoJs"); 
+        iconoJs[i].classList.toggle("rotate");
     }) 
 });
 

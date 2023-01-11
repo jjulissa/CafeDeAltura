@@ -471,6 +471,10 @@ hr {
     /* color: #ffffff; */
 } 
 
+.rotate {
+    transform: rotate(180deg);
+}
+
 /* Coffee Shop */
 
 .salon {

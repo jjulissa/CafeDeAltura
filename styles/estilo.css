@@ -78,11 +78,15 @@ body {
 .cestaOne, .cestaTwo, .CadaCesta {
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    gap: 24px; 
 } 
+.CadaCesta {
+    /* gap: 24px; */
+    padding: 20px;
+}
 .fotoCafe {
     width: 60px; 
-    height: 50px;
+    height: 50px; 
 }
 
 .masoMenosxs {
@@ -92,6 +96,20 @@ body {
     flex-direction: row;
     gap: 8px;
 }
+
+.parafoCantidad {
+    width: 24px;
+    height: 24px;
+    padding: 0.4rem 0.4rem;
+    border-radius: 50%;
+    background-color: rgba(42, 91, 69, 0.1);
+    margin: 0 0.5rem;
+    color: #2A5B45;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
 
 .masoMenosxs img {
     width: 20px;

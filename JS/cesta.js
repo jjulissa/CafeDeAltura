@@ -19,7 +19,7 @@ cesta.forEach(element => {
 
     let cantidad = document.createElement("p"); 
     cantidad.innerText = 1; 
-    cantidad.classList.add("cantidad")
+    cantidad.classList.add("parafoCantidad")
 
     let mas = document.createElement("img"); 
     mas.src = "../asset/icono/mass.png"; 
@@ -46,18 +46,72 @@ cesta.forEach(element => {
     masoMenosxs.append(menos, cantidad, mas); 
     titCesta.append(titulo, descripcion); 
     cestaTres.append(CadaCesta, hrmedio); 
+    
+    prixJs.innerText = (parseInt(prixJs.innerText) + parseInt(precio.innerText)) + "€";   
+    totalJs.innerText = parseInt(prixJs.innerText) + "€"; 
 
-  
+    menos.addEventListener("click", () => {   
+        if(menos.innerText >= 1) { 
+            cantidad.innerText--;
+        } 
+        else { 
+        CadaCesta.remove(); 
+        hrmedio.remove(); 
+        }
+    });  
 
-
+    mas.addEventListener("click", () => {  
+        precio.innerText = parseInt(precio.innerText) + 9  + " €" ; 
+        cantidad.innerText++; 
+        prixJs.innerText =  (parseInt(totalJs.innerText) + parseInt(precio.innerText)) + "€";
+        totalJs.innerText  = parseInt(prixJs.innerText) + " €"; 
+        
+    }); 
+    
         // Suma 
 
-prixJs.innerText = (parseInt(prixJs.innerText) + parseInt(element.price)) + "€";   
 
-totalJs.innerText = parseInt(prixJs.innerText) + "€"; 
-
+    
 
 }); 
+
+// let lab = document.querySelectorAll(".lab"); 
+// console.log(lab);
+let price = document.querySelector(".price"); 
+let gratisJs = document.querySelector(".gratisJs"); 
+let priceJs = document.querySelector(".priceJs"); 
+let labOneJs = document.querySelector(".labOneJs"); 
+let labTwoJs = document.querySelector(".labTwoJs"); 
+
+
+// lab.forEach( (element, i) =>  { 
+//     element.addEventListener("click", (event) => {  
+//         console.log(lab[i]);
+//         if(lab[1]) { 
+//             gratisJs.innerText = 9 + " €"; 
+//             totalJs.innerText = parseInt(totalJs.innerText) + parseInt(gratisJs.innerText) + " €"; 
+//         }
+//         else if (lab[0]) { 
+//             gratisJs.innerText = "GRATIS";
+//             totalJs.innerText + " €"; 
+//         }
+//     }) 
+// }); 
+
+labOneJs.addEventListener("click", () => {
+    gratisJs.innerText = "GRATIS";
+    totalJs.innerText = prixJs.innerText + " €"; 
+
+});
+
+labTwoJs.addEventListener("click", () => {
+    gratisJs.innerText = 9 + " €"; 
+    totalJs.innerText = parseInt(totalJs.innerText) + parseInt(gratisJs.innerText) + " €"; 
+    
+}); 
+
+
+
 
 
 
