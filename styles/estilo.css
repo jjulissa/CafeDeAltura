@@ -24,6 +24,13 @@ body {
     gap: 8px;
     justify-content: center;
     align-items: center;
+} 
+.icon2Tienda {
+    color: #F7F5F3; 
+    font-size: 12px; 
+    font-weight: 400; 
+    line-height: 16px; 
+    
 }
 
 .linkTitle a :visited {

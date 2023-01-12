@@ -32,10 +32,11 @@
             <button>Iniciar Sesión</button>
         </div>
 
-        <div class="carrito">
-            <a href="../page/cesta.html">
-                <img src="../asset/icono/Carito.png" alt="Carito">
-                <img class="icon2Tienda" src="../asset/icono/2.png" alt="2">
+        <div>
+            <a class="carrito" href="../page/cesta.html">
+                <img src="../asset/icono/Carito.png" alt="Carito"> 
+                <P class="icon2Tienda">0</P>
+                <!-- <img class="icon2Tienda" src="../asset/icono/2.png" alt="2"> -->
             </a>
         </div>
     </header>
@@ -45,13 +46,13 @@
 
     <main class="mainCesta">
 
-        <h1 class="titleCesta">Cesta (2)</h1>
+        <h1 class="titleCesta">Cesta <span class="cantCestaJs">0</span></h1>
 
         <section class="cajaCesta">
             <div class="cestaIzquierda">
                 <p class="productCesta">Productos</p>
             
-                <article class="cestaOne">
+                <!-- <article class="cestaOne">
                     <div class="masoMenosxs">
                         <img src="../asset/icono/men.png" alt="iconoMenos">
                         <p class="parafoCantidad">1</p>
@@ -68,11 +69,11 @@
                     </div>
 
                     <p class="naranjosTitle">9,00 €</p>
-                </article>
+                </article> -->
 
-                <div class="hrmedio"></div>
+                <!-- <div class="hrmedio"></div> -->
 
-                <article class="cestaTwo">
+                <!-- <article class="cestaTwo">
                     
                     <div class="masoMenosxs">
                         <img src="../asset/icono/men.png" alt="iconoMenos">
@@ -90,9 +91,9 @@
                     </div> 
 
                     <p class="precioCasita">9,00 €</p>
-                </article> 
+                </article>  -->
 
-                <div class="hrmedio"></div>
+                <!-- <div class="hrmedio"></div> -->
                 <article class="cestaTres">
                     
                 </article> 
@@ -130,7 +131,7 @@
 
                     <div class="subTotal">
                         <p>SUBTOTAL</p>
-                        <p id="prixJs">18,00 €</p>
+                        <p id="prixJs">0 €</p>
                     </div>
 
                     <div class="envioCesta">
@@ -143,7 +144,7 @@
                     <div class="tota">
                         <p class="tt">TOTAL</p>
                         <div class="detalleTotal">
-                            <p id="totalJs" class="euro18">18,00 €</p>
+                            <p id="totalJs" class="euro18">0 €</p>
                             <p class="incluye">Incluye 3,78€ de IVA</p>
                         </div>
                     </div>
