@@ -28,7 +28,8 @@ body {
     align-items: center;
     font-size: 14px;
     font-weight: 600;
-    line-height: 16px;
+    line-height: 16px; 
+    /* gap: 100px; */
 }
 
 .mainSucces, .mainOneSucces {
@@ -37,14 +38,16 @@ body {
     gap: 24px;
     justify-content: center;
     align-content: center;
-    width: 1280px;
+    width: 1280px; 
     
-}
+} 
+
 
 .mainSucces {
     width: 1280px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+    padding-bottom: 20px;
 
 }
 

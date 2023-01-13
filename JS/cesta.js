@@ -81,7 +81,8 @@ cesta.forEach((element, i) =>  {
         prixJs.innerText =  (parseInt(prixJs.innerText) +  prix) + " €"
         // prixJs.innerText =  (parseInt(totalJs.innerText) + parseInt(precio.innerText)) + "€";
         totalJs.innerText  = parseInt(prixJs.innerText) + " €"; 
- 
+        localStorage.setItem("subtotal", JSON.stringify(prixJs.innerText));  
+        localStorage.setItem("total", JSON.stringify(totalJs.innerText));  
     }); 
     
 

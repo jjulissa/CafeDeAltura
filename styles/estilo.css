@@ -18,14 +18,15 @@ body {
 
 /* Header Tiendas */
 
-.carrito {
+.carrito, .prueba {
     display: flex;
     flex-direction: row;
     gap: 8px;
     justify-content: center;
     align-items: center;
 } 
-.icon2Tienda {
+
+.icon2Tienda, .prueb {
     color: #F7F5F3; 
     font-size: 12px; 
     font-weight: 400; 
@@ -36,7 +37,8 @@ body {
 .linkTitle a :visited {
     background-color: #f7f5f31a;
     border: 5px #f7f5f31a solid;
-}
+} 
+
 
 
 
