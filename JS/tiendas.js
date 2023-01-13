@@ -7,9 +7,6 @@ let carrito = [];
 btnAnadir.forEach( (el, i) =>  { 
 	el.addEventListener("click", (event) => {   
         // console.log(btnAnadir[i]); 
-        if(btnAnadir[i]) { 
-
-        } else { 
         iconTienda.innerHTML++; 
         console.log(event.target.previousElementSibling.innerText); 
         const caja = { 
@@ -21,7 +18,7 @@ btnAnadir.forEach( (el, i) =>  {
         
         localStorage.setItem("caja", JSON.stringify(carrito));	
         localStorage.setItem("iconTienda", JSON.stringify(iconTienda)); 
-    }
+    
     
 	} ) 
 }); 
