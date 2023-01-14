@@ -12,7 +12,9 @@ subToSuccesJs.innerText = respuestaSubtotal;
 totalSuccesJs.innerText = respuestaTotal; 
 envioSuccesJs.innerText = respuestaEnvio; 
 
-let cesta = JSON.parse(localStorage.getItem("caja")); 
+let respuestaSavecesta = JSON.parse(localStorage.getItem("Savecesta")); 
+
+console.log(respuestaSavecesta);  
 
 
 

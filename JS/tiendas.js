@@ -17,7 +17,7 @@ btnAnadir.forEach( (el, i) =>  {
         carrito.push(caja);  
         
         localStorage.setItem("caja", JSON.stringify(carrito));	
-        localStorage.setItem("iconTienda", JSON.stringify(iconTienda)); 
+        // localStorage.setItem("iconTienda", JSON.stringify(iconTienda)); 
     
     
 	} ) 

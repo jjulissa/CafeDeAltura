@@ -1,5 +1,6 @@
 // localStorage.clear();  
 let cesta = JSON.parse(localStorage.getItem("caja")); 
+
 // console.log(cesta); 
 
 let prixJs = document.querySelector("#prixJs"); 
@@ -38,6 +39,7 @@ cesta.forEach((element, i) =>  {
     let descripcion = document.createElement("p"); 
     descripcion.innerText = "Paquete de café, 250 gr"; 
     let precio = document.createElement("p"); 
+    precio.classList.add("precioCasita");
     
     img.src = element.image; 
     titulo.innerText = element.title; 
@@ -58,12 +60,14 @@ cesta.forEach((element, i) =>  {
     totalJs.innerText = parseInt(prixJs.innerText) + "€"; 
 
     menos.addEventListener("click", () => {   
-        if(cantidad.innerText >= 1) { 
+        if(cantidad.innerText > 1) { 
             const prix = cesta[i].price.match(/\d/g).join('') / 100; 
             precio.innerText = parseInt(precio.innerText) - prix;
             cantidad.innerText--;  
             prixJs.innerText =  (parseInt(prixJs.innerText) -  prix) + " €"; 
-            totalJs.innerText  = parseInt(prixJs.innerText) - " €";
+            totalJs.innerText  = parseInt(prixJs.innerText) - " €";  
+            localStorage.setItem("cantidadMenos", JSON.stringify(cantidad.innerText));  
+
         } 
         else { 
         CadaCesta.remove(); 
@@ -75,7 +79,7 @@ cesta.forEach((element, i) =>  {
         icon2Tienda.innerText++; 
         cantCestaJs.innerText++;
         const prix = cesta[i].price.match(/\d/g).join('') / 100; 
-        precio.innerText = parseInt(precio.innerText) + prix;
+        precio.innerText = parseInt(precio.innerText) + prix + " €";
         // precio.innerText = parseInt(precio.innerText) + 9  + " €" ; 
         cantidad.innerText++; 
         prixJs.innerText =  (parseInt(prixJs.innerText) +  prix) + " €"
@@ -83,6 +87,8 @@ cesta.forEach((element, i) =>  {
         totalJs.innerText  = parseInt(prixJs.innerText) + " €"; 
         localStorage.setItem("subtotal", JSON.stringify(prixJs.innerText));  
         localStorage.setItem("total", JSON.stringify(totalJs.innerText));  
+        localStorage.setItem("cantidadMas", JSON.stringify(cantidad.innerText));  
+ 
     }); 
     
 
@@ -103,7 +109,7 @@ cesta.forEach((element, i) =>  {
 }; 
 // localStorage.setItem("cafe", JSON.stringify(arrayCesta)); 
 
-localStorage.setItem("cesta", JSON.stringify(cesta));
+localStorage.setItem("Savecesta", JSON.stringify(cesta));
 
 let lab = document.querySelectorAll(".lab"); 
 // console.log(lab);
@@ -130,7 +136,7 @@ let labTwoJs = document.querySelector(".labTwoJs");
 
 labOneJs.addEventListener("click", () => {
     gratisJs.innerText = "GRATIS";
-    totalJs.innerText = prixJs.innerText + " €"; 
+    totalJs.innerText = prixJs.innerText + " "; 
     localStorage.setItem("envio", gratisJs.innerText); 
 
 }); 
@@ -145,6 +151,8 @@ labTwoJs.addEventListener("click", () => {
 
 
 
+let respuestaCantMenos = JSON.parse(localStorage.getItem("cantidadMenos")); 
+let respuestaCantMas = JSON.parse(localStorage.getItem("cantidadMas")); 
 
 
 
