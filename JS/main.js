@@ -50,9 +50,9 @@ formContactoJs.addEventListener("submit", (event) => {
     let parafoMensaje = document.createElement("p"); 
     
     parafoMensaje.innerText = "Nombre Completo: " + nombreCompleto.value + 
-        ", "+ " Email: " +email.value + ", " + 
-        "Telefono: " + telefono.value + ", " + 
-        "Comentario: " +quejas.value;  
+        ", "+ " \n Email: " +email.value + ", " + 
+        "\n Telefono: " + telefono.value + ", " + 
+        "\n Comentario: " +quejas.value;  
     
 localStorage.setItem("quejas", JSON.stringify(parafoMensaje.innerText)); 
     console.log(parafoMensaje); 
