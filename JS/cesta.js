@@ -62,6 +62,7 @@ cesta.forEach((element, i) =>  {
     menos.addEventListener("click", () => {   
         if(cantidad.innerText > 1) { 
             const prix = cesta[i].price.match(/\d/g).join('') / 100; 
+            console.log(price);
             precio.innerText = parseInt(precio.innerText) - prix;
             cantidad.innerText--;  
             prixJs.innerText =  (parseInt(prixJs.innerText) -  prix) + " €"; 

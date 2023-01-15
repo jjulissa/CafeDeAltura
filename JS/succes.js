@@ -14,7 +14,7 @@ envioSuccesJs.innerText = respuestaEnvio;
 
 let respuestaSavecesta = JSON.parse(localStorage.getItem("Savecesta")); 
 
-console.log(respuestaSavecesta);  
+// console.log(respuestaSavecesta);  
 
 
 

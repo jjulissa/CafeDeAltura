@@ -21,6 +21,7 @@ let tarjetaDebito = document.querySelector("#tarjetaDebito");
 tarjetaDebito.addEventListener("click", event => { 
     event.preventDefault(); 
     let metodoPago = document.createElement("p"); 
+    metodoPago.classList.add("metodoPago"); 
 
     metodoPago.innerText = "Nombre del titular: " + titular.value  
         + "\n Número de la tarjeta: " +numeroTarjeta.value 
@@ -32,5 +33,39 @@ tarjetaDebito.addEventListener("click", event => {
     
 }); 
 
+let nombre = document.querySelector("#name"); 
+let apellido = document.querySelector("#apellidos"); 
+let telefono = document.querySelector("#teléfono"); 
+let email = document.querySelector("#email"); 
+let pais = document.querySelector("#país"); 
+let poblacion = document.querySelector("#población"); 
+let cp = document.querySelector("#cp"); 
+let calle = document.querySelector("#calle"); 
+let numeroCalle = document.querySelector("#nº"); 
+let piso = document.querySelector("#piso"); 
+let puerta = document.querySelector("#puerta"); 
+let btnPagarPedido = document.querySelector(".btnPagarCheckout"); 
+
+
+btnPagarPedido.addEventListener("submit", (event) => { 
+    event.preventDefault(); 
+    let direccionEnvio = document.createElement("p"); 
+    console.log();
+    direccionEnvio.innerText = "Nombre: " + nombre.value 
+        + "\n Apellido: " + apellido.value 
+        + "\n Telefono: " +telefono.value 
+        + "\n Email: " +email.value 
+        + "\n País: " +pais.value 
+        + "\n Población: " +poblacion.value 
+        + "\n CP: " +cp.value 
+        + "\n Calle: " +calle.value 
+        + "\n Nº: " +numeroCalle.value 
+        + "\n Piso: " +piso.value 
+        + "\n Puerta: " +puerta.value 
+    
+    console.log(direccionEnvio);
+localStorage.setItem("direccionEnvio", JSON.stringify(direccionEnvio.innerText)); 
+
+}); 
 
 
