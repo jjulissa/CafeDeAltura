@@ -14,10 +14,15 @@
 </head>
 <body>
     <header>
-        <div class="title">
+        <!-- <div class="title">
             <h1>cafedealtura.com</h1>
             <img src="../asset/icono/VectorTazaCafe.png" alt="Logo">
-        </div>
+        </div> --> 
+
+        <a class="title" href="../index.html"> 
+            <h1>cafedealtura.com</h1>
+            <img src="../asset/icono/VectorTazaCafe.png" alt="Logo">
+        </a>
 
         <div class="linkTitle">
             <a href="./tiendas.html">Tienda</a>
@@ -57,23 +62,23 @@
                     <article class="titularCheck">
                         <div class="nameTitular">
                             <label for="titular">Titular</label>
-                            <input type="text" placeholder="Nombre del titular" name="titular" id="titular">
+                            <input type="text" placeholder="Nombre del titular" name="titular" id="titular" required>
                         </div>
 
                         <div class="numeroTarjetaCheck">
                             <label for="NúmeroTarjeta">Número de la tarjeta</label>
-                            <input type="number" name="NúmeroTarjeta" id="NúmeroTarjeta" placeholder="1234 1234 1234 1234">
+                            <input type="number" name="NúmeroTarjeta" id="NúmeroTarjeta" max="16" placeholder="1234 1234 1234 1234" required>
                         </div>
 
                         <div class="fechaCaducidadCheck">
                             <section class="fechaCheck">
                                 <label class="labelChico" for="FechaCaducidad">Fecha de caducidad</label>
-                                <input type="date" name="FechaCaducidad" id="FechaCaducidad" placeholder="MM / YY">
+                                <input type="date" name="FechaCaducidad" id="FechaCaducidad" required>
                             </section>
 
                             <section class="cvcCheck">
                                 <label class="labelChico" for="CVC">CVC</label>
-                                <input type="number" placeholder="123" name="CVC" id="CVC">
+                                <input type="number" placeholder="123" name="CVC" id="CVC" required>
                             </section>
                         </div>
                     </article>
@@ -106,28 +111,28 @@
 
                         <div class="addressUno">
                             <label for="name">Nombre</label>
-                            <input type="text" name="name" id="name" placeholder="Nombre">
+                            <input type="text" name="name" id="name" placeholder="Nombre" required>
                         </div>
 
                         <div class="addressDos">
                             <label for="apellidos">Apellidos</label>
-                            <input type="text" name="apellidos" id="apellidos" placeholder="apellidos">
+                            <input type="text" name="apellidos" id="apellidos" placeholder="apellidos" required>
                         </div>
 
                         <div class="addressTres">
                             <label for="name">Teléfono</label>
-                            <input type="tel" name="teléfono" id="teléfono" placeholder="+34 600 6000 600">
+                            <input type="tel" name="teléfono" id="teléfono" placeholder="+34 600 6000 600" required>
                         </div>
 
                         <div class="addressCuatro">
                             <label for="name">Email</label>
-                            <input type="email" name="email" id="email" placeholder="email">
+                            <input type="email" name="email" id="email" placeholder="email" required>
                         </div>
 
                         <div class="addressCinco">
                             <label for="name">País</label>
                             <!-- <input type="text" name="país" id="país" placeholder="país"> -->
-                            <select name="select" id="país"> 
+                            <select name="select" id="país" required> 
                                 <option value="seleccionar" selected>seleccionar</option>
                                 <option value="haiti">Haiti</option>
                                 <option value="espana">Espana</option>
@@ -138,34 +143,34 @@
                         <div class="addressSeis">
                             <article class="poblCheck">
                                 <label for="población">Población</label>
-                                <input type="text" id="población" name="población">
+                                <input type="text" id="población" name="población" required>
                             </article>
 
                             <article class="cpCheck">
                                 <label for="cp">CP</label>
-                                <input type="text" id="cp" name="cp" placeholder="123">
+                                <input type="text" id="cp" name="cp" placeholder="123" required>
                             </article>
                         </div>
 
                         <div class="addressSiete">
                             <article class="calle">
                                 <label for="calle">Calle</label>
-                                <input type="text" id="calle" name="calle">
+                                <input type="text" id="calle" name="calle" required>
                             </article>
 
                             <article class="numero">
                                 <label for="nº">Nº</label>
-                                <input type="text" id="nº" name="nº">
+                                <input type="text" id="nº" name="nº" required>
                             </article>
 
                             <article class="piso">
                                 <label for="piso">Piso</label>
-                                <input type="text" id="piso" name="piso">
+                                <input type="text" id="piso" name="piso" required>
                             </article>
                             
                             <article class="puerta">
                                 <label for="puerta">Puerta</label>
-                                <input type="text" id="puerta" name="puerta">
+                                <input type="text" id="puerta" name="puerta" required>
                             </article>
 
                         </div>
@@ -200,8 +205,10 @@
                             </div>
                         </div>
                     </arcticle>
-                    <arcticle class="btnPagarPedido" >
-                        <a href="../page/succes.html"><button class="btnPagarCheckout">Pagar y realizar pedido</button></a>
+                    <arcticle class="btnPagarPedido">
+                        <a href="../page/succes.html">
+                            <button class="btnPagarCheckout">Pagar y realizar pedido</button> 
+                        </a>
                     </arcticle> 
                 </div>
             </article>

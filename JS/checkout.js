@@ -44,13 +44,12 @@ let calle = document.querySelector("#calle");
 let numeroCalle = document.querySelector("#nº"); 
 let piso = document.querySelector("#piso"); 
 let puerta = document.querySelector("#puerta"); 
-let btnPagarPedido = document.querySelector(".btnPagarCheckout"); 
+let btnPagarPedido = document.querySelector(".btnPagarCheckout");  
+console.log(btnPagarPedido);
 
-
-btnPagarPedido.addEventListener("submit", (event) => { 
+btnPagarPedido.addEventListener("click", (event) => { 
     event.preventDefault(); 
     let direccionEnvio = document.createElement("p"); 
-    console.log();
     direccionEnvio.innerText = "Nombre: " + nombre.value 
         + "\n Apellido: " + apellido.value 
         + "\n Telefono: " +telefono.value 
@@ -65,6 +64,8 @@ btnPagarPedido.addEventListener("submit", (event) => {
     
     console.log(direccionEnvio);
 localStorage.setItem("direccionEnvio", JSON.stringify(direccionEnvio.innerText)); 
+
+location.assign('../page/succes.html')
 
 }); 
 

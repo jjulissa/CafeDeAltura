@@ -22,13 +22,15 @@ header {
 .title {
     display: flex;
     align-items: center;
-    gap: 7.3px;
+    gap: 7.3px; 
+    text-decoration: none;
 }
 .title h1 {
     font-size: 23px;
     font-weight: 400;
     font-family: 'Outfit';
-    font-style: normal;
+    font-style: normal; 
+    color: #ffffff;
 }
 
 .linkTitle a {
@@ -136,7 +138,8 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 4px 4px #00000040;
+    box-shadow: 0px 4px 4px #00000040; 
+    border: none;
 
 }
 .btnComprar {
@@ -150,7 +153,8 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 4px 4px #00000040;
+    box-shadow: 0px 4px 4px #00000040; 
+    border: none;
 }
 
 /* Main Two */
@@ -341,7 +345,8 @@ main {
     height: 32px;
     background-color: #2A5B45;
     color: #ffffff;
-    border-radius: 4px;
+    border-radius: 4px; 
+    border: none;
 }
 
 .linkNew a {
@@ -419,7 +424,6 @@ hr {
 
 .prep {
     width: 620px;
-    height: ;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -439,7 +443,8 @@ hr {
     width: 290px;
     font-size: 18px;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 24px; 
+    color: #2a2b2a;
 }
 
 .preguntasOficina img {
@@ -726,7 +731,8 @@ hr {
     height: 40px;
     padding: 12px 24px 20px 24px;
     border-radius: 5px;
-    color: #ffffff;
+    color: #ffffff; 
+    border: none;
 }
 
 .labelTlf {
