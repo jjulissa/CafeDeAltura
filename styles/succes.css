@@ -165,7 +165,7 @@ body {
     width: 1152px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; 
     gap: 16px;
     font-size: 14px;
     font-weight: 600;
@@ -308,10 +308,11 @@ body {
     color:#000000; 
 } 
 
-.debitoCheck .opcion {
+.debitoCheck .opcion, .transferenciaCheck .opcion {
     font-size: 10px; 
     font-weight:200;
-}
+} 
+
 .paraGratisCheck, .para9Check {
     filter: blur(var(--value, 1rem));
 } 

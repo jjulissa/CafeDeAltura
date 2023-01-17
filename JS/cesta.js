@@ -60,13 +60,14 @@ cesta.forEach((element, i) =>  {
     totalJs.innerText = parseInt(prixJs.innerText) + "€"; 
 
     menos.addEventListener("click", () => {   
+        console.log("Hola");
         if(cantidad.innerText > 1) { 
+            console.log("Dios");
             const prix = cesta[i].price.match(/\d/g).join('') / 100; 
-            console.log(price);
             precio.innerText = parseInt(precio.innerText) - prix;
             cantidad.innerText--;  
             prixJs.innerText =  (parseInt(prixJs.innerText) -  prix) + " €"; 
-            totalJs.innerText  = parseInt(prixJs.innerText) - " €";  
+            totalJs.innerText = parseInt(prixJs.innerText) + " €";  
             localStorage.setItem("cantidadMenos", JSON.stringify(cantidad.innerText));  
 
         } 
@@ -85,7 +86,9 @@ cesta.forEach((element, i) =>  {
         cantidad.innerText++; 
         prixJs.innerText =  (parseInt(prixJs.innerText) +  prix) + " €"
         // prixJs.innerText =  (parseInt(totalJs.innerText) + parseInt(precio.innerText)) + "€";
-        totalJs.innerText  = parseInt(prixJs.innerText) + " €"; 
+        let porcentaje = ((4 * parseInt(prixJs.innerText) / 100)); 
+        // totalJs.innerText  = parseInt(prixJs.innerText) + " €"; 
+        totalJs.innerText  = (parseInt(prixJs.innerText) - porcentaje + " €")
         localStorage.setItem("subtotal", JSON.stringify(prixJs.innerText));  
         localStorage.setItem("total", JSON.stringify(totalJs.innerText));  
         localStorage.setItem("cantidadMas", JSON.stringify(cantidad.innerText));  
